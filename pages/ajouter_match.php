@@ -58,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $statement->execute();
 
     // Rediriger l'utilisateur vers une page de confirmation ou une autre page après l'ajout des données
-    header("Location: confirmation.php");
+    header("Location: all.php");
     exit();
 }
 ?>
@@ -69,45 +69,48 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajouter des données</title>
+    <link rel="stylesheet" href="../sass/styles.css">
 </head>
 <body>
-<h2>Ajouter des données</h2>
+<h2 style="text-align: center ">Ajouter des données</h2>
+
 <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-    <label for="saison">Saison :</label>
-    <input type="text" name="saison" id="saison" required>
-    <label for="championnat">Championnat :</label>
-    <input type="text" name="championnat" id="championnat" required>
-    <label for="adversaire">Adversaire :</label>
-    <input type="text" name="adversaire" id="adversaire" required>
-    <label for="pts">Points :</label>
-    <input type="number" name="pts" id="pts" required>
-    <label for="rbd">Rebonds :</label>
+<div class="formContainer" >
+<div class="formBouton" > <label for="saison">Saison :</label>
+    <input type="text" name="saison" id="saison" required></div>
+    <div class="formBouton" >   <label for="championnat">Championnat :</label>
+    <input type="text" name="championnat" id="championnat" required></div>
+    <div class="formBouton" > <label for="adversaire">Adversaire :</label>
+    <input type="text" name="adversaire" id="adversaire" required></div>
+    <div class="formBouton" > <label for="pts">Points :</label>
+    <input type="number" name="pts" id="pts" required></div>
+    <div class="formBouton" > <label for="rbd">Rebonds :</label>
     <input type="number" name="rbd" id="rbd" required>
-    <label for="ast">Assists :</label>
-    <input type="number" name="ast" id="ast" required>
-    <label for="stl">Steals :</label>
-    <input type="number" name="stl" id="stl" required>
-    <label for="blk">Blocks :</label>
-    <input type="number" name="blk" id="blk" required>
-    <label for="p">P :</label>
-    <input type="number" name="p" id="p" required>
-    <label for="pat">PA Tirées :</label>
-    <input type="number" name="pat" id="pat" required>
-    <label for="troisP">3 Points :</label>
-    <input type="number" name="troisP" id="troisP" required>
-    <label for="troisPA">3 Points tentés :</label>
-    <input type="number" name="troisPA" id="troisPA" required>
-    <label for="unP">1 Point :</label>
-    <input type="number" name="unP" id="unP" required>
-    <label for="unPA">1 Point tentés :</label>
-    <input type="number" name="unPA" id="unPA" required>
-    <label for="to">Turnovers :</label>
-    <input type="number" name="to" id="to" required>
-    <label for="eff">EFF :</label>
-    <input type="number" name="eff" id="eff" required>
-    <label for="min">Minutes :</label>
-    <input type="number" name="min" id="min" required>
-    <input type="submit" value="Ajouter">
+    <div class="formBouton" >  <label for="ast">Assists :</label>
+    <input type="number" name="ast" id="ast" required></div>
+    <div class="formBouton" >  <label for="stl">Steals :</label>
+    <input type="number" name="stl" id="stl" required></div>
+    <div class="formBouton" >  <label for="blk">Blocks :</label>
+    <input type="number" name="blk" id="blk" required></div>
+    <div class="formBouton" >  <label for="p">P :</label>
+    <input type="number" name="p" id="p" required></div>
+    <div class="formBouton" > <label for="pat">PA Tirées :</label>
+    <input type="number" name="pat" id="pat" required></div>
+    <div class="formBouton" > <label for="troisP">3 Points :</label>
+    <input type="number" name="troisP" id="troisP" required></div>
+    <div class="formBouton" > <label for="troisPA">3 Points tentés :</label>
+    <input type="number" name="troisPA" id="troisPA" required></div>
+    <div class="formBouton" > <label for="unP">1 Point :</label>
+    <input type="number" name="unP" id="unP" required></div>
+    <div class="formBouton" > <label for="unPA">1 Point tentés :</label>
+    <input type="number" name="unPA" id="unPA" required></div>
+    <div class="formBouton" >  <label for="to">Turnovers :</label>
+    <input type="number" name="to" id="to" required></div>
+    <div class="formBouton" > <label for="eff">EFF :</label>
+    <input type="number" name="eff" id="eff" required></div>
+    <div class="formBouton" >  <label for="min">Minutes :</label> 
+    <input type="number" name="min" id="min" required></div></div>
+    <input class="cancel" type="submit" value="Ajouter">
 </form>
 
 </body>
