@@ -1,0 +1,14 @@
+
+.scrollable-table {
+    max-height: 400px; /* Définissez la hauteur maximale souhaitée */
+    overflow-y: auto; /* Ajoute un défilement vertical si nécessaire */
+    margin-top: 40px; /* Ajoute une marge supérieure */
+    width: auto; /* Assurez-vous que le tableau prend toute la largeur de son conteneur */
+}
+
+.center-table {
+    margin: 0 auto; /* Centre le tableau horizontalement */
+}
+th:hover {
+    cursor: pointer;
+}

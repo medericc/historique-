@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/* sass/styles.css */
+body {
+  font-family: Arial, sans-serif; /* Police de caractères par défaut */
+  margin: 20px; /* Ajoute des marges autour du contenu */
+  padding: 0; /* Supprime le rembourrage par défaut */
+  background-color: #f0f0f0; /* Couleur d'arrière-plan */
+  color: #333; /* Couleur de texte par défaut */
+}
+
+/* sass/styles.css */
+h1 {
+  font-size: 28px; /* Taille de la police */
+  text-align: center; /* Alignement centré */
+  margin-top: 20px; /* Ajout d'une marge supérieure */
+  margin-bottom: 20px; /* Ajout d'une marge supérieure */
+}
+
+.container {
+  margin-top: 20px; /* Ajout d'une marge supérieure pour le contenu */
+}
+
+/* sass/styles.css */
+main {
+  margin: 20px auto; /* Centre le contenu horizontalement */
+  max-width: 800px; /* Limite la largeur du contenu pour éviter qu'il ne devienne trop large sur les grands écrans */
+  display: flex; /* Utilisation de flexbox */
+  flex-direction: column; /* Empile les éléments en colonne */
+  justify-content: center; /* Centre verticalement le contenu */
+  align-items: center; /* Centre horizontalement le contenu */
+}
+
+body {
+  font-family: Arial, sans-serif; /* Police de caractères par défaut */
+  margin: 0; /* Supprime les marges par défaut */
+  padding: 0; /* Supprime le rembourrage par défaut */
+  background-color: #f0f0f0; /* Couleur d'arrière-plan */
+  color: #333; /* Couleur de texte par défaut */
+}
+
+.scrollable-table {
+  max-height: 400px; /* Définissez la hauteur maximale souhaitée */
+  overflow-y: auto; /* Ajoute un défilement vertical si nécessaire */
+  margin-top: 40px; /* Ajoute une marge supérieure */
+  width: auto; /* Assurez-vous que le tableau prend toute la largeur de son conteneur */
+}
+
+.center-table {
+  margin: 0 auto; /* Centre le tableau horizontalement */
+}
+
+th:hover {
+  cursor: pointer;
+}
+
+/* Style de base pour l'en-tête */
+header {
+  background-color: #333; /* Couleur d'arrière-plan */
+  color: #fff; /* Couleur de texte */
+  padding: 10px 0; /* Rembourrage haut et bas de l'en-tête */
+}
+
+/* Style pour la navigation */
+nav {
+  text-align: center; /* Alignement du texte au centre */
+}
+
+/* Style pour les liens de navigation */
+nav ul {
+  list-style-type: none; /* Supprimer les puces de liste */
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block; /* Afficher les éléments de liste en ligne */
+  margin-right: 20px; /* Espacement entre les éléments de liste */
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* Supprimer la marge du dernier élément de liste */
+}
+
+nav ul li a {
+  color: #fff; /* Couleur du texte des liens */
+  text-decoration: none; /* Supprimer le soulignement par défaut */
+}
+
+nav ul li a:hover {
+  text-decoration: underline; /* Souligner les liens au survol */
+}
+
+footer {
+  position: fixed; /* Positionnement fixe */
+  bottom: 0; /* Aligner le bas du pied de page avec le bas de la fenêtre du navigateur */
+  width: 100%; /* Utiliser toute la largeur de la fenêtre */
+  background-color: #333; /* Couleur d'arrière-plan */
+  color: #fff; /* Couleur du texte */
+  padding: 10px 0; /* Espacement interne */
+  text-align: center; /* Alignement du texte au centre */
+}/*# sourceMappingURL=styles.css.map */

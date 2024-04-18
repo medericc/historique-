@@ -1,0 +1,35 @@
+/* Style de base pour l'en-tête */
+header {
+  background-color: #333; /* Couleur d'arrière-plan */
+  color: #fff; /* Couleur de texte */
+  padding: 10px 0; /* Rembourrage haut et bas de l'en-tête */
+}
+
+/* Style pour la navigation */
+nav {
+  text-align: center; /* Alignement du texte au centre */
+}
+
+/* Style pour les liens de navigation */
+nav ul {
+  list-style-type: none; /* Supprimer les puces de liste */
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block; /* Afficher les éléments de liste en ligne */
+  margin-right: 20px; /* Espacement entre les éléments de liste */
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* Supprimer la marge du dernier élément de liste */
+}
+
+nav ul li a {
+  color: #fff; /* Couleur du texte des liens */
+  text-decoration: none; /* Supprimer le soulignement par défaut */
+}
+
+nav ul li a:hover {
+  text-decoration: underline; /* Souligner les liens au survol */
+}
