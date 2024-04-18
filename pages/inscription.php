@@ -48,19 +48,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../sass/styles.css">
     <title>Inscription</title>
 </head>
 <body>
-    <h2>Inscription</h2>
+    <h2 class="loginh2">Inscription</h2>
     <?php if (isset($erreur)) { ?>
         <p style="color: red;"><?php echo $erreur; ?></p>
     <?php } ?>
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-        <label for="nom_utilisateur">Nom d'utilisateur :</label>
+    <div class="inContainer">   <label for="nom_utilisateur">Nom d'utilisateur :</label>
         <input type="text" name="nom_utilisateur" id="nom_utilisateur" required>
         <label for="mot_de_passe">Mot de passe :</label>
         <input type="password" name="mot_de_passe" id="mot_de_passe" required>
-        <input type="submit" value="S'inscrire">
-    </form>
+        <input class="seco" type="submit" value="S'inscrire"> </div>
+    </form> <a class="seco2" href="connexion.php">Se connecter</a>
 </body>
 </html>
